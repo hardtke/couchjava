@@ -1,26 +1,11 @@
 package com.cloudant.indexers;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
 import java.util.Set;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import com.cloudant.couchdbjavaserver.*;
-import com.cloudant.index.CouchIndexUtils;
-import com.cloudant.index.IndexType;
-import com.cloudant.index.IndexUtilities;
-import com.cloudant.index.SingleDocumentIndex;
-import com.stinkyteddy.utils.StDateUtils;
 
 import org.apache.lucene.analysis.standard.*;
 import org.apache.lucene.analysis.*;

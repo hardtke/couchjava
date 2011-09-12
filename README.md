@@ -87,7 +87,7 @@ MyCustomSearch is identical to the standard Cloudant Search class com.cloudant.i
 
 ### Custom Analyzer using User Defined Stop Word Set
 
-There is an example [MyCustomStopWords.java][https://github.com/cloudant/couchjava/blob/master/src/com/cloudant/indexers/MyCustomStopWords.java] showing how to utilize a custom user defined analyzer, in this case the Standard Lucene Analyzer but with a stop word set defined in the design document. The design document for this would look like:
+There is an example [MyCustomStopWords.java][9] showing how to utilize a custom user defined analyzer, in this case the Standard Lucene Analyzer but with a stop word set defined in the design document. The design document for this would look like:
 
     {
        "_id": "_design/lucene",
@@ -123,3 +123,4 @@ Cloudant folks are usually hanging out in IRC.  Freenode, channel #cloudant.  We
 [6]: https://cloudant.com/doc/javaviews/com/cloudant/indexers/MyCustomSearch.html
 [7]: https://cloudant.com/doc/javaviews/com/cloudant/couchdbjavaserver/SearchView.html
 [8]: http://support.cloudant.com/faqs/search/search-indexing
+[9]: https://github.com/cloudant/couchjava/blob/master/src/com/cloudant/indexers/MyCustomStopWords.java
