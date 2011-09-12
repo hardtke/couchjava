@@ -85,6 +85,26 @@ To use [com.cloudant.indexers.MyCustomSearch][6] for indexing your database, you
 
 MyCustomSearch is identical to the standard Cloudant Search class com.cloudant.indexers.CustomSearch.  Full configuration instructions can be found on [Cloudant Support][8].
 
+### Custom Analyzer using User Defined Stop Word Set
+
+There is an example [MyCustomStopWords.java][https://github.com/cloudant/couchjava/blob/master/src/com/cloudant/indexers/MyCustomStopWords.java] showing how to utilize a custom user defined analyzer, in this case the Standard Lucene Analyzer but with a stop word set defined in the design document. The design document for this would look like:
+
+    {
+       "_id": "_design/lucene",
+       "language": "java",
+       "views": {
+           "index": {
+               "map": "{"classname":"com.cloudant.indexers.MyCustomStopWords","configure":{"fields":[{"name":".*","lucenename":"all","type":"string","regexp":true}],"stopwords":["ya","yo","you"]}}",
+               "reduce": "_count"
+           }
+       }
+    }
+
+In this case the stop word set would be "ya","yo","you".
+
+### couchapp
+
+In the couchapp directory, you'll find some information on using the couchapp command line tool to upload java langauge views and code.
 
 ### Contact
 

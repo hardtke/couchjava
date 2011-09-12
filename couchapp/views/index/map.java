@@ -1,0 +1,1 @@
+{"classname":"com.cloudant.indexers.MyCustomStopWords","configure":{"fields":[{"name":".*","lucenename":"all","type":"string","regexp":true}],"stopwords":["facebook","the"]}}

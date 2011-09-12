@@ -13,8 +13,12 @@ containing the term "java" in the top level directory.
 
 As with all couchapps, the view is defined in the view folder.  In this case, there is a view call "title" with a map and reduces classes defined:
 
-views/title/map.java
-views/title/reduce.java
+    views/title/map.java
+    views/title/reduce.java
+
+There is also an example of a SearhView for use with Cloudant's search application:
+    views/index/map.java
+    views/index/reduce.java
 
 Any jar files that you want to upload should be place in the _attachments directory (note -- you can place multiple jar files there).  If you want to work with the deafult javaviews.jar file created by the couchjava project, create  a symoblic link to couchjava/dist/javaviews.jar
 
