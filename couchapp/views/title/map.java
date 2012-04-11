@@ -1,1 +1,0 @@
-{"classname":"com.cloudant.javaviews.SplitText","configure":"title"}

@@ -1,1 +1,1 @@
-{"classname":"com.cloudant.indexers.MyCustomStopWords","configure":{"fields":[{"name":".*","lucenename":"all","type":"string","regexp":true}],"stopwords":["facebook","the"]}}
+{"classname":"com.cloudant.indexers.CustomSearch","configure":{"analyzer":"com.stinkyteddy.indexers.EnglishStemmerAnalyzer","fields":[{"name":".*","lucenename":"all","type":"string","regexp":true}]}}
